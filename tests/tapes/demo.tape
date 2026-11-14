@@ -1,0 +1,2 @@
+{"reelay_tape": 1, "name": "demo", "created_at": "2026-11-14T00:00:00.000Z", "upstream": "https://api.example.com"}
+{"id": "01JDEMO0000000000000000001", "recorded_at": "2026-11-14T00:00:00.000Z", "duration_ms": 42.0, "upstream": "https://api.example.com", "request": {"method": "GET", "path": "/greeting", "query": [["name", "world"]], "headers": [["Accept", "application/json"]], "body": {"encoding": "empty"}}, "response": {"status": 200, "reason": "OK", "headers": [["Content-Type", "application/json"]], "body": {"encoding": "json", "content": {"message": "hello, world"}}}}
