@@ -1,0 +1,34 @@
+# Example: a front-end team working against a staging API.
+# Run from the repository root:  reelay serve -c examples/reelay.toml
+
+[server]
+mode = "hybrid"
+tape = "tapes/staging.tape"
+target = "https://staging.example.com/api"
+port = 8080
+cors = true
+
+[match]
+ignore_query = ["_", "ts"]
+ignore_body = ["$.clientRequestId"]
+strategy = "sequential"
+
+[redact]
+headers = ["X-Team-Token"]
+json_keys = ["iban", "ssn"]
+
+[chaos]
+enabled = false   # turn on with --chaos
+seed = 2026
+
+[[chaos.rule]]
+route = "GET /api/search/**"
+latency = "200ms..900ms"
+
+[[chaos.rule]]
+route = "POST /api/orders"
+error_rate = 0.2
+error_status = 503
+
+[diff]
+ignore = ["$..updated_at", "$..etag"]
