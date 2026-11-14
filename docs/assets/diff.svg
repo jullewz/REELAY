@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="887" height="318" viewBox="0 0 887 318" role="img" aria-label="reelay diff planets.tape planets-v2.tape">
+<style>text{font:13.5px 'JetBrains Mono','Cascadia Code',Menlo,Consolas,monospace;white-space:pre}</style>
+<rect width="887" height="318" rx="12" fill="#0b0b0f" stroke="#26262d"/>
+<rect width="887" height="34" rx="12" fill="#141419"/>
+<rect y="22" width="887" height="12" fill="#141419"/>
+<circle cx="20" cy="17" r="5.5" fill="#3f3f46"/><circle cx="38" cy="17" r="5.5" fill="#3f3f46"/><circle cx="56" cy="17" r="5.5" fill="#3f3f46"/>
+<text x="443.5" y="21.5" fill="#71717a" text-anchor="middle">reelay diff planets.tape planets-v2.tape</text>
+<text y="69" xml:space="preserve"><tspan x="22.0" fill="#71717a">── </tspan><tspan x="47.3" fill="#c4b5fd" font-weight="700">planets.tape → planets-v2.tape</tspan><tspan x="300.2" fill="#d4d4d8"> </tspan><tspan x="308.6" fill="#71717a">──────────────────────────────────────────────────────────────────</tspan></text>
+<text y="89" xml:space="preserve"><tspan x="22.0" fill="#d4d4d8">  </tspan><tspan x="38.9" fill="#fbbf24">changed</tspan><tspan x="97.9" fill="#d4d4d8">  GET /planets/earth  </tspan><tspan x="283.3" fill="#6ee7b7">200</tspan></text>
+<text y="109" xml:space="preserve"><tspan x="22.0" fill="#d4d4d8">           </tspan><tspan x="114.7" fill="#fbbf24">~ $.moons: integer → object</tspan></text>
+<text y="129" xml:space="preserve"><tspan x="22.0" fill="#d4d4d8">           </tspan><tspan x="114.7" fill="#6ee7b7">+ $.mass_kg = null</tspan></text>
+<text y="149" xml:space="preserve"><tspan x="22.0" fill="#d4d4d8">  </tspan><tspan x="38.9" fill="#fbbf24">changed</tspan><tspan x="97.9" fill="#d4d4d8">  GET /planets/mars  </tspan><tspan x="274.9" fill="#6ee7b7">200</tspan></text>
+<text y="169" xml:space="preserve"><tspan x="22.0" fill="#d4d4d8">           </tspan><tspan x="114.7" fill="#fbbf24">~ $.moons: integer → object</tspan></text>
+<text y="189" xml:space="preserve"><tspan x="22.0" fill="#d4d4d8">           </tspan><tspan x="114.7" fill="#6ee7b7">+ $.mass_kg = null</tspan></text>
+<text y="209" xml:space="preserve"><tspan x="22.0" fill="#d4d4d8">  </tspan><tspan x="38.9" fill="#fb7185">missing</tspan><tspan x="97.9" fill="#d4d4d8">  GET /planets/jupiter</tspan></text>
+<text y="229" xml:space="preserve"><tspan x="22.0" fill="#d4d4d8">  </tspan><tspan x="38.9" fill="#fb7185">missing</tspan><tspan x="97.9" fill="#d4d4d8">  GET /planets/pluto</tspan></text>
+<text y="249" xml:space="preserve"><tspan x="22.0" fill="#d4d4d8">  </tspan><tspan x="38.9" fill="#fb7185">missing</tspan><tspan x="97.9" fill="#d4d4d8">  GET /planets/mars?api_key=[REDACTED]</tspan></text>
+<text y="289" xml:space="preserve"><tspan x="22.0" fill="#d4d4d8">  compared 3 exchange(s): </tspan><tspan x="241.2" fill="#fbbf24">2 changed, 3 missing, 0 new</tspan></text>
+</svg>
